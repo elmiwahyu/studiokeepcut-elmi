@@ -1,0 +1,630 @@
+/*==============navbar==============*/
+
+header {
+  background-color: #6c6c6c;
+  color: #000000;
+  text-align: left;
+  padding: 10px 0;
+  z-index: 1000;
+  margin-bottom: 25px;
+}
+
+header a {
+  color: #000000;
+  text-decoration: none;
+  margin-right: 20px;
+}
+
+header a:hover {
+  text-decoration: underline;
+}
+
+.logo {
+  float: left;
+  margin-right: 20px;
+  margin-top: -65px;
+}
+
+nav {
+  float: right;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav li {
+  display: inline;
+  margin-right: 20px;
+}
+
+.button {
+  background-color: #274674;
+  color: #ffffff;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.bg {
+  width: 100%;
+  height: 100vh; /* Mengatur tinggi gambar sesuai tinggi layar */
+  object-fit: cover; /* Mengisi gambar ke seluruh kontainer */
+  margin-top: -2%;
+}
+
+h1 {
+  font-size: 36px;
+}
+.welcome-heading {
+  margin-top: -580px; /* Sesuaikan dengan jumlah piksel yang Anda inginkan */
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.service-description {
+  margin-top: 70px; /* Sesuaikan dengan jumlah piksel yang Anda inginkan */
+  font-size: medium;
+  color: #ffffff;
+  size: bold;
+}
+
+.register-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #ffffff;
+  color: #000000;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+.register-button:hover {
+  background-color: rgb(106, 236, 51);
+}
+
+.section-title {
+  margin-top: -250px; /* Sesuaikan dengan jumlah piksel yang Anda inginkan */
+}
+
+/*service*/
+.container {
+  text-align: center;
+  margin: 20px 0; /* Margin atas dan bawah */
+}
+
+.section-title-service {
+  font-size: 35px; /* Ukuran teks judul */
+  color: #000000; /* Warna teks judul */
+  margin-top: 20px; /* Margin atas */
+  margin-bottom: 10px; /* Jarak antara judul dan deskripsi */
+  margin-left: 10px;
+}
+
+.services-description {
+  font-size: 16px; /* Ukuran teks deskripsi */
+  color: #000000; /* Warna teks deskripsi */
+  line-height: 1.6; /* Jarak antar baris */
+}
+
+.services-description ul {
+  list-style: disc; /* Menggunakan bullets (poin) dalam daftar */
+  margin-left: 30px; /* Margin kiri untuk daftar */
+}
+
+.image-links {
+  text-align: center; /* Pusatkan gambar */
+}
+
+.image-links a {
+  display: inline-block; /* Atur gambar agar tampil dalam satu baris */
+  margin: 20px; /* Tambahkan margin di sekitar setiap gambar */
+}
+
+/*about us*/
+.description {
+  display: flex;
+  align-items: center;
+}
+
+.section-title-about {
+  font-size: 35px; /* Ukuran teks judul */
+  color: #000000; /* Warna teks judul */
+  margin-top: 20px; /* Margin atas */
+  margin-bottom: 10px; /* Jarak antara judul dan deskripsi */
+  margin-left: 10px;
+}
+
+.description p {
+  flex: 1;
+  text-align: left;
+  margin-left: 50px;
+  font-size: medium;
+}
+
+.description img {
+  width: 400px; /* Sesuaikan ukuran gambar sesuai kebutuhan */
+  margin-left: 20px; /* Jarak antara gambar dan teks */
+}
+
+/*======================Contact Us====================*/
+
+.section-title-contact {
+  margin-top: -20px;
+  margin-bottom: 40px;
+}
+
+.container-contact {
+  max-width: 800px;
+  height: 370px;
+  background: #fff;
+  margin: 50px auto;
+  margin-top: 20px;
+  box-shadow: 0 0 20px rgba(30, 55, 155, 0.6);
+  box-sizing: border-box;
+  padding: 40px;
+}
+
+.input,
+.msg .area {
+  margin-top: -15px;
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  margin-bottom: 25px;
+  border: 2px solid #e9eaea;
+  font-size: 14px;
+  border-radius: 5px;
+  outline: none;
+  transform: all 0.5s ease;
+}
+
+.login .input {
+  width: 48%;
+  float: left;
+  height: 40px;
+  margin-right: 4%;
+}
+
+.subject .input {
+  float: left;
+  height: 40px;
+  margin-right: 4%;
+}
+
+.login .input:last-child {
+  margin-right: 0;
+}
+
+.msg .area {
+  height: 100px;
+}
+
+.input:focus,
+.msg .area:focus {
+  border: 2px solid #274674;
+}
+
+::-webkit-input-placeholder {
+  font-family: "roboto";
+}
+/* Style the social media container */
+.social-media {
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* Style each social item (icon + description) */
+.social-item {
+  display: inline-block;
+  margin: 0 20px; /* Add some spacing between the items */
+}
+
+/* Style the social media icons */
+.social-item a {
+  display: block;
+  text-decoration: none;
+  color: #274674; /* Icon color */
+  font-size: 24px; /* Icon size */
+}
+
+/* Change icon color on hover */
+.social-item a:hover {
+  color: #000; /* Hover color */
+}
+
+.social-item a img {
+  width: 32px; /* Set the width of the image */
+  height: 32px; /* Set the height of the image */
+  display: block;
+  text-decoration: none;
+  color: #274674; /* Icon color */
+  margin-top: -30px;
+}
+
+/* Style the social media descriptions */
+.social-description {
+  font-size: 14px; /* Description text size */
+  color: #000; /* Description text color */
+  text-align: center; /* Center the text */
+  margin-left: -20px;
+}
+
+/* Additional styling */
+input.small-input,
+.input.large-input,
+.area {
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #e9eaea;
+  border-radius: 5px;
+  outline: none;
+  transition: all 0.5s ease;
+}
+
+.btn-contact {
+  width: 100px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  border-radius: 5px;
+  margin-top: -15px;
+  margin-left: 300px;
+  text-transform: uppercase;
+  cursor: pointer;
+  background: #274674;
+  color: #fff;
+}
+
+.input:focus,
+.area:focus {
+  border: 2px solid #274674;
+}
+
+/*=============Sign Up=======================*/
+/* Styling for the Sign Up button */
+.signupbox button {
+  border: none;
+  outline: none;
+  height: 40px;
+  width: 100%; /* Make the button the same width as the input fields */
+  background: #274674;
+  color: #ffffff;
+  font-size: 18px;
+  border-radius: 20px;
+  margin-top: 40px;
+  cursor: pointer;
+  transition: background 0.3s, color 0.3s; /* Add a smooth hover transition */
+}
+
+.signupbox button:hover {
+  background: #ffffff;
+  color: #000000;
+}
+
+/* Reset some default styles */
+body,
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+/* Apply a background image */
+.bgsign_up {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1; /* Place the background image behind the content */
+}
+
+/* Styling for the signup box */
+.signupbox {
+  width: 350px;
+  height: 410px;
+  background: rgba(238, 238, 238, 0.47);
+  color: rgba(255, 251, 251, 0.304);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-sizing: border-box;
+  padding: 70px 30px;
+  border-radius: 20px;
+  opacity: 0.92;
+}
+
+.logosignup {
+  width: 100px;
+  height: 100px;
+  margin-left: 25px;
+  margin-top: -75px;
+}
+
+h1.signup {
+  margin: 0;
+  font-size: 22px;
+  margin-left: 100px;
+  margin-top: -20px;
+  color: #000000;
+}
+
+/* Styling for text elements */
+.textsignup,
+.textsignupone,
+.textsignuptwo {
+  font-size: 14px;
+  color: #000;
+  margin-left: 10px;
+}
+
+/* Styling for input fields */
+.signupbox input[type="text"],
+.signupbox input[type="email"],
+.signupbox input[type="password"] {
+  width: 100%;
+  margin-bottom: 1px;
+  border: none;
+  border-bottom: 1px solid rgb(3, 3, 3);
+  background: transparent;
+  outline: none;
+  height: 20px;
+  color: #000000;
+  font-size: 16px;
+}
+
+/* Styling for input placeholders */
+.signupbox input[type="text"]::placeholder,
+.signupbox input[type="email"]::placeholder,
+.signupbox input[type="password"]::placeholder {
+  color: #494848;
+  margin-top: -20px;
+  padding-top: 10px;
+}
+
+/* Style for the Sign Up button */
+
+/* Styling for the "Already have an account?" link */
+
+.signupbox a {
+  text-decoration: none;
+  font-size: 12px;
+  line-height: 20px;
+  color: #0569ff;
+  margin-left: 80px;
+}
+
+.signupbox a:hover {
+  text-decoration: underline;
+  color: #000000;
+}
+
+/* Add styles for the "Forgot Password" link */
+.signupbox a.forgot-password {
+  text-decoration: none;
+  font-size: 12px;
+  color: #0569ff;
+  margin-top: 1px;
+  display: block; /* Make the link a block element to separate it from the text above */
+  text-align: center; /* Center-align the link */
+  margin-left: 1px;
+}
+
+.signupbox a.forgot-password:hover {
+  text-decoration: underline;
+  color: #000000; /* Change color on hover */
+}
+
+/*===============menu 1==============*/
+/* style.css */
+.logo {
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  margin-left: 20px;
+  top: 50px;
+}
+
+.logout-button {
+  position: absolute;
+  top: 45px;
+  right: 50px;
+}
+
+.image_menusatu a {
+  display: inline-block; /* Atur gambar agar tampil dalam satu baris */
+  margin: 70px; /* Tambahkan margin di sekitar setiap gambar */
+}
+
+.image_menusatu img {
+  width: 200px; /* Adjust the width of the images */
+  height: 200px;
+  margin-top: -30px;
+  margin-left: 170px;
+}
+
+.gender-text {
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+  color: #000;
+  margin-top: 170px; /* Increased margin-top for spacing */
+}
+
+/*-------menu tiga------*/
+.price-caption {
+  text-align: center; /* Aligns the text in the center */
+  font-size: 18px; /* Adjust the font size */
+  margin-top: 5px; /* Provides some space between the image and the price */
+  color: #ffffff; /* Changes the text color to white */
+  background-color: rgba(0, 0, 0, 0.7); /* Adds a semi-transparent black background */
+  padding: 5px; /* Adds padding around the text */
+}
+
+/*-------tanggal jadwal-----*/
+/* Style for the date picker */
+
+/* Style for the text */
+.gender-text {
+  font-size: 24px;
+  color: #000000;
+  left: 100px;
+  margin-top: 100px;
+}
+
+/* style.css */
+
+/* Existing styles */
+
+/* Styles for the form and new elements */
+.appointment-form {
+  max-width: 400px;
+  margin: 20px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.appointment-form .form-group {
+  margin-bottom: 20px;
+}
+
+.appointment-form label {
+  font-weight: bold;
+}
+
+.appointment-form input[type="text"],
+.appointment-form input[type="date"],
+.appointment-form select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.appointment-form button {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+}
+
+.appointment-form button:hover {
+  background-color: #0056b3;
+}
+
+/*done*/
+.btn-primary {
+  margin-left: 50%;
+  background-color: #007bff; /* Warna latar belakang */
+  color: #fff; /* Warna teks */
+  border: none; /* Hilangkan border */
+  padding: 8px 16px; /* Padding di dalam tombol */
+  border-radius: 4px; /* Sudut tombol */
+  cursor: pointer; /* Ubah kursor saat dihover */
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out; /* Animasi perubahan warna */
+}
+
+.btn-primary:hover {
+  background-color: #0056b3; /* Warna latar belakang saat dihover */
+}
+
+/*footer*/
+/* styles.css */
+
+/* Reset default margin and padding for footer */
+footer {
+  margin: 0;
+  padding: 10px;
+  text-align: center; /* Center-align text */
+}
+
+/* Styling for the text within the footer */
+footer p {
+  margin: 0;
+  font-size: 14px; /* Font size */
+  color: #555; /* Text color */
+}
+
+/*Admin*/
+/* Style untuk tampilan admin */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #6b6a6a;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+main {
+  padding: 20px;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+/*css test*/
+/* Tombol "Back" */
+.back-button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #ff0000;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-left: 40px;
+}
+
+.back-button:hover {
+  background-color: #0056b3;
+}

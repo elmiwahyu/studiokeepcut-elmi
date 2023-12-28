@@ -1,0 +1,102 @@
+/* Style untuk tampilan admin */
+/* Tata letak untuk halaman secara keseluruhan */
+body {
+  background-image: url("img/bg_menu.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  font-family: Arial, sans-serif; /* Gunakan font yang diinginkan */
+  /* Tambahan gaya lainnya sesuai kebutuhan */
+}
+
+/* Gaya untuk logo */
+.logo {
+  width: 150px; /* Ubah ukuran sesuai kebutuhan */
+  height: auto;
+  margin-left: -1000px;
+}
+
+.logout-button {
+  position: absolute;
+  top: 45px;
+  right: 50px;
+}
+/*css test*/
+/* styles.css */
+
+/* Gaya umum untuk halaman */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  height: 120px;
+  background-color: rgb(152, 147, 147);
+  color: #000000;
+  padding: 10px;
+  text-align: center;
+}
+
+header h1 {
+  margin-top: -110px;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin-top: -10px;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  color: #000000;
+  text-decoration: none;
+}
+
+main {
+  padding: 20px;
+}
+
+footer {
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+/* Gaya untuk tabel jadwal janji temu */
+section#schedule {
+  margin-top: 20px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+table th,
+table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+table th {
+  background-color: #f2f2f2;
+}
+
+table tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+table tbody tr:hover {
+  background-color: #e9e9e9;
+}

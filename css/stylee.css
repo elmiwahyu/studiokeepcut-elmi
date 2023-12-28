@@ -1,0 +1,703 @@
+/*** Spinner Start ***/
+#spinner {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.8s ease-out, visibility 0s linear 0.5s;
+  z-index: 99999;
+}
+
+#spinner.show {
+  transition: opacity 0.8s ease-out, visibility 0s linear 0s;
+  visibility: visible;
+  opacity: 1;
+}
+/*** Spinner End ***/
+
+.back-to-top {
+  position: fixed;
+  right: 30px;
+  bottom: 30px;
+  display: flex;
+  width: 45px;
+  height: 45px;
+  align-items: center;
+  justify-content: center;
+  transition: 0.5s;
+  z-index: 99;
+}
+
+/*** Button Start ***/
+.btn {
+  font-weight: 600;
+  transition: 0.5s;
+}
+
+.btn-square {
+  width: 32px;
+  height: 32px;
+}
+
+.btn-sm-square {
+  width: 34px;
+  height: 34px;
+}
+
+.btn-md-square {
+  width: 44px;
+  height: 44px;
+}
+
+.btn-lg-square {
+  width: 56px;
+  height: 56px;
+}
+
+.btn-square,
+.btn-sm-square,
+.btn-md-square,
+.btn-lg-square {
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: normal;
+}
+
+.btn-primary-outline-0 {
+  color: var(--bs-white) !important;
+  border: 1px solid var(--bs-primary);
+}
+/* CSS untuk mengubah warna tombol menjadi biru */
+.btn-primary {
+  background-color: #ad0b0b; /* Ubah menjadi warna biru yang diinginkan */
+  border-color: #ffffff; /* Warna border */
+  border-radius: 15%;
+  color: white; /* Warna teks */
+}
+
+.btn-primary:hover {
+  background-color: darkblue; /* Ubah warna tombol saat dihover */
+  border-color: darkblue; /* Warna border saat dihover */
+  border-radius: 15%;
+  color: rgb(236, 236, 236); /* Warna teks saat dihover */
+}
+
+.btn-light-outline-0 {
+  color: var(--bs-primary) !important;
+  border: 1px solid var(--bs-light);
+}
+
+.btn-primary-outline-0:hover {
+  background: var(--bs-secondary) !important;
+  color: var(--bs-white) !important;
+  border: 1px solid var(--bs-primary);
+}
+
+.btn-light-outline-0:hover {
+  background: var(--bs-primary) !important;
+  color: var(--bs-white) !important;
+  border: 1px solid var(--bs-secondary);
+}
+
+.img-border {
+  border-color: var(--bs-secondary);
+  border-style: double;
+}
+
+.display-1,
+.display-2,
+.display-3,
+.display-4,
+.display-5,
+.display-6 {
+  font-family: "Arial", sans-serif;
+  font-weight: 700;
+}
+
+/*** Navbar Start ***/
+.sticky-top {
+  transition: 0.5s;
+  background: var(--bs-white);
+}
+
+.navbar .navbar-nav .nav-link {
+  padding: 10px 15px;
+  font-family: "Arial", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  transition: 0.5s;
+}
+
+:root {
+  --bs-primary: #0b0b0c; /* Atur nilai warna primer sesuai kebutuhan */
+}
+
+.navbar .navbar-nav .nav-link:hover,
+.navbar .navbar-nav .nav-link.active,
+.sticky-top.bg-white .navbar .navbar-nav .nav-link:hover,
+.sticky-top.bg-white .navbar .navbar-nav .nav-link.active {
+  color: var(--bs-primary);
+}
+
+@media (min-width: 1200px) {
+  .navbar .navbar-collapse .border-top {
+    border-top: none !important;
+  }
+}
+/*** Navbar End ***/
+
+/*** Carousel Start ***/
+.carousel-item {
+  position: relative;
+  min-height: 100vh;
+}
+
+.carousel-item img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.carousel-item .carousel-caption {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  text-align: center;
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
+  background-size: cover;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  opacity: 0;
+}
+
+.carousel-control-prev .carousel-control-prev-icon,
+.carousel-control-next .carousel-control-next-icon {
+  background: transparent;
+}
+
+#carouselId .carousel-indicators {
+  padding-bottom: 30px;
+}
+
+#carouselId .carousel-indicators li {
+  border-top: 10px solid var(--bs-white);
+  border-bottom: 10px solid var(--bs-white);
+  border-right: 5px solid var(--bs-white);
+  border-left: 5px solid var(--bs-white);
+  margin-right: 10px;
+  transition: 0.5s;
+}
+
+#carouselId .carousel-indicators li.active {
+  background: var(--bs-primary);
+  border-color: var(--bs-primary);
+  border-right: 15px solid var(--bs-primary);
+  border-left: 15px solid var(--bs-primary);
+}
+
+/* CSS untuk mengubah font teks menjadi Arial */
+
+/*** Carousel End ***/
+
+/*** Wedding Story Start ***/
+.story .story-timeline,
+.story .story-timeline .row {
+  position: relative;
+}
+
+.story .story-timeline::before,
+.story .story-timeline::after {
+  position: absolute;
+  content: "";
+  width: 15px;
+  height: 15px;
+  background: var(--bs-secondary);
+  border-radius: 10px;
+  left: 50%;
+  top: -7px;
+  transform: translateX(-50%);
+}
+
+.story .story-timeline::after {
+  top: auto;
+  bottom: -7px;
+}
+
+.story .story-timeline .row::after {
+  position: absolute;
+  content: "\f004";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  font-size: 30px;
+  color: var(--bs-secondary);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@media (max-width: 768px) {
+  .story .story-timeline::before,
+  .story .story-timeline::after,
+  .story .story-timeline .row::after {
+    display: none;
+  }
+}
+/*** Wedding Story End ***/
+
+/*** Wedding Date Start ***/
+.wedding-date-bg .wedding-date {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url(../img/wedding-date-bg.jpg) center;
+  object-fit: cover;
+  background-repeat: no-repeat;
+}
+
+.wedding-date-bg .wedding-date::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  z-index: 3;
+}
+
+.wedding-date-bg .wedding-date .wedding-date-content {
+  position: relative;
+  z-index: 9;
+}
+/*** Wedding Date End ***/
+
+/*** Wedding Timeline Start ***/
+@media (max-width: 576px) {
+  .wedding-timeline .wedding-content .heart-circle {
+    display: none;
+  }
+}
+/*** Wedding Timeline End ***/
+
+/*** Gallery Start ***/
+.gallery .gallery-img {
+  position: relative;
+  overflow: hidden;
+}
+
+.gallery .gallery-img .hover-style {
+  width: 0;
+  height: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: 1s;
+}
+
+.gallery .gallery-img:hover .hover-style {
+  width: auto;
+  height: auto;
+  border: 600px solid rgba(255, 255, 255, 0.3);
+  opacity: 1;
+}
+
+.gallery .gallery-img img {
+  transition: 0.5s;
+}
+
+.gallery .gallery-img:hover img {
+  transform: scale(1.3);
+}
+
+.gallery .gallery-item .gallery-overlay {
+  transition: 0.5s;
+}
+
+.gallery .gallery-item:hover .gallery-overlay {
+  background: transparent !important;
+  border: 0 !important;
+}
+
+.gallery .gallery-img .search-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: 0.5s;
+  opacity: 0;
+  z-index: 2;
+}
+
+.gallery .gallery-img:hover .search-icon {
+  opacity: 1;
+}
+/*** Gallery End ***/
+
+/*** team Start ***/
+.team .team-item {
+  position: relative;
+  overflow: hidden;
+}
+
+.team .team-item .team-content {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  align-items: end;
+  justify-content: center;
+  transition: 0.5s;
+  z-index: 4;
+}
+
+.team .team-item:hover .team-content {
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.team .team-item .team-content {
+  text-align: center;
+}
+
+.team .team-item .team-social {
+  position: absolute;
+  top: -180px;
+  right: 15px;
+  z-index: 5;
+  transition: 0.5s;
+}
+
+.team .team-item:hover .team-social {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  z-index: 5;
+}
+
+.team .team-item .team-img {
+  position: relative;
+  overflow: hidden;
+  border-color: var(--bs-secondary);
+  border-style: double;
+}
+
+.team .team-item .team-img .team-img-main {
+  position: relative;
+  z-index: 3;
+}
+
+.team .team-item .team-img .team-img-main img,
+.team .team-item .team-img .team-img-bg img {
+  transition: 0.5s;
+}
+
+.team .team-item:hover .team-img .team-img-main img,
+.team .team-item:hover .team-img .team-img-bg img {
+  transform: scale(1.1);
+}
+/*** Team End ***/
+
+/*** Contact Us Start ***/
+.RSVP-form {
+  background: linear-gradient(rgba(255, 255, 255, 0.08), rgba(0, 0, 0, 0.2));
+  object-fit: cover;
+}
+/*** Contact Us End ***/
+
+/*** Footer Start ***/
+
+.footer .footer-item a.btn-link,
+.footer .footer-item p {
+  line-height: 35px;
+  font-size: 17px;
+  color: var(--bs-light);
+  transition: 0.5s;
+}
+
+.footer .footer-item a.btn-link:hover {
+  color: var(--bs-primary);
+  letter-spacing: 2px;
+}
+
+@media (max-width: 992px) {
+  .footer .text-start,
+  .footer .text-center,
+  .footer .text-end {
+    text-align: center !important;
+  }
+}
+/*** Footer End ***/
+
+/*** copyright Start ***/
+.copyright {
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  background: var(--bs-dark) !important;
+}
+/*** copyright end ***/
+
+/* CSS untuk logo di navbar */
+.navbar-brand img {
+  width: 130px; /* Ubah sesuai ukuran yang diinginkan */
+  height: auto; /* Biarkan tinggi menyesuaikan proporsi */
+  margin-right: 20px; /* Atur margin jika diperlukan */
+  /* Tambahkan efek transisi atau properti lain sesuai kebutuhan */
+}
+
+/* CSS untuk mengubah jenis font teks menjadi Arial */
+.text-white {
+  font-family: Arial, sans-serif; /* Menggunakan font Arial dengan backup sans-serif jika tidak tersedia */
+
+  font-size: 1.2rem; /* Ukuran font */
+  line-height: 1.6; /* Tinggi baris */
+
+  color: white; /* Warna teks */
+}
+
+.welcome-heading {
+  font-size: 2.5rem; /* Ukuran font */
+  font-weight: bold; /* Ketebalan font */
+  color: #333; /* Warna teks */
+  text-align: center; /* Penyelarasan teks */
+  margin-bottom: 20px; /* Margin bawah */
+}
+
+/*service*/
+.container {
+  text-align: center;
+  margin: 20px 0; /* Margin atas dan bawah */
+}
+
+.section-title-service {
+  font-size: 35px; /* Ukuran teks judul */
+  color: #000000; /* Warna teks judul */
+  margin-top: 20px; /* Margin atas */
+  margin-bottom: 10px; /* Jarak antara judul dan deskripsi */
+  margin-left: 10px;
+}
+
+.services-description {
+  font-size: 16px; /* Ukuran teks deskripsi */
+  color: #000000; /* Warna teks deskripsi */
+  line-height: 1.6; /* Jarak antar baris */
+}
+
+.services-description ul {
+  list-style: disc; /* Menggunakan bullets (poin) dalam daftar */
+  margin-left: 30px; /* Margin kiri untuk daftar */
+}
+
+.image-links {
+  text-align: center; /* Pusatkan gambar */
+}
+
+.image-links a {
+  display: inline-block; /* Atur gambar agar tampil dalam satu baris */
+  margin: 20px; /* Tambahkan margin di sekitar setiap gambar */
+}
+
+.description {
+  display: flex;
+  align-items: center;
+}
+
+.section-title-about {
+  font-size: 35px; /* Ukuran teks judul */
+  color: #000000; /* Warna teks judul */
+  margin-top: 20px; /* Margin atas */
+  margin-bottom: 10px; /* Jarak antara judul dan deskripsi */
+  margin-left: 10px;
+}
+
+.description p {
+  flex: 1;
+  text-align: left;
+  margin-left: 50px;
+  font-size: medium;
+}
+
+.description img {
+  width: 400px; /* Sesuaikan ukuran gambar sesuai kebutuhan */
+  margin-left: 20px; /* Jarak antara gambar dan teks */
+}
+
+/* CSS untuk susunan teks dan gambar berdampingan */
+.description-about {
+  display: flex; /* Menggunakan flexbox */
+  align-items: center; /* Menyelaraskan item secara vertikal */
+}
+
+.description-about p {
+  flex: 1; /* Merapatkan ruang pada teks agar gambar bisa disampingnya */
+  margin-right: 20px; /* Jarak antara teks dan gambar */
+  /* CSS untuk membuat warna teks menjadi hitam */
+
+  color: black; /* Mengatur warna teks menjadi hitam */
+}
+
+.description-about img {
+  max-width: 100%; /* Gambar tidak melebihi lebar kontainer */
+  height: auto; /* Menjaga proporsi gambar */
+}
+
+.section-title-contact {
+  margin-top: -20px;
+  margin-bottom: 40px;
+}
+
+.container-contact {
+  max-width: 800px;
+  height: 370px;
+  background: #fff;
+  margin: 50px auto;
+  margin-top: 20px;
+  box-shadow: 0 0 20px rgba(30, 55, 155, 0.6);
+  box-sizing: border-box;
+  padding: 40px;
+}
+
+.input,
+.msg .area {
+  margin-top: -15px;
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  margin-bottom: 25px;
+  border: 2px solid #e9eaea;
+  font-size: 14px;
+  border-radius: 5px;
+  outline: none;
+  transform: all 0.5s ease;
+}
+
+.login .input {
+  width: 48%;
+  float: left;
+  height: 40px;
+  margin-right: 4%;
+}
+
+.subject .input {
+  float: left;
+  height: 40px;
+  margin-right: 4%;
+}
+
+.login .input:last-child {
+  margin-right: 0;
+}
+
+.msg .area {
+  height: 100px;
+}
+
+.input:focus,
+.msg .area:focus {
+  border: 2px solid #274674;
+}
+
+::-webkit-input-placeholder {
+  font-family: "roboto";
+}
+/* Style the social media container */
+.social-media {
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* Style each social item (icon + description) */
+.social-item {
+  display: inline-block;
+  margin: 0 20px; /* Add some spacing between the items */
+}
+
+/* Style the social media icons */
+.social-item a {
+  display: block;
+  text-decoration: none;
+  color: #274674; /* Icon color */
+  font-size: 24px; /* Icon size */
+}
+
+/* Change icon color on hover */
+.social-item a:hover {
+  color: #000; /* Hover color */
+}
+
+.social-item a img {
+  width: 32px; /* Set the width of the image */
+  height: 32px; /* Set the height of the image */
+  display: block;
+  text-decoration: none;
+  color: #274674; /* Icon color */
+  margin-top: -30px;
+}
+
+/* Style the social media descriptions */
+.social-description {
+  font-size: 14px; /* Description text size */
+  color: #000; /* Description text color */
+  text-align: center; /* Center the text */
+  margin-left: -20px;
+}
+
+/* Additional styling */
+input.small-input,
+.input.large-input,
+.area {
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #e9eaea;
+  border-radius: 5px;
+  outline: none;
+  transition: all 0.5s ease;
+}
+
+.btn-contact {
+  width: 100px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  border-radius: 5px;
+  margin-top: -15px;
+  margin-left: 300px;
+  text-transform: uppercase;
+  cursor: pointer;
+  background: #274674;
+  color: #fff;
+}
+
+.input:focus,
+.area:focus {
+  border: 2px solid #274674;
+}
+
+/* CSS untuk judul (h4) dan paragraf */
+.text-black-50 {
+  color: #888888; /* Mengatur warna teks menjadi abu-abu (#888888) atau sesuai yang diinginkan */
+  /* Atur properti lain sesuai kebutuhan */
+}
+
+.text-black-50 h4 {
+  font-size: 1.5rem; /* Ubah ukuran teks untuk judul (h4) */
+  margin-bottom: 1rem; /* Beri jarak bawah */
+}
+
+.text-black-50 p {
+  font-size: 1rem; /* Ubah ukuran teks untuk paragraf */
+  /* Atur properti lain sesuai kebutuhan */
+}
+.footer {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/bg_menu.png) center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
